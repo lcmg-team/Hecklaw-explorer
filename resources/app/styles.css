@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chrome-ui {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: #f1f1f1;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.toolbar button {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#address-bar {
+    flex: 1;
+    padding: 8px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#go {
+    padding: 8px 16px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#go:hover {
+    background-color: #45a049;
+}
+
+webview {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 40px);
+    border: none;
+}
